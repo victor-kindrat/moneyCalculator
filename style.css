@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrap {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat, sans-serif;
+  padding: 50px;
+}
+.wrap .card {
+  display: flex;
+  min-height: 80vh;
+  width: 80%;
+  max-width: 1400px;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+.wrap .card .left {
+  width: 50%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.wrap .card .left .left__headline {
+  font-size: calc(20px + 1vw);
+  color: #151515;
+}
+.wrap .card .left .left__section {
+  width: 100%;
+  border-radius: 10px;
+  padding: 25px 25px 0 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+}
+.wrap .card .left .left__section .left__title {
+  color: #555555;
+  font-size: 16px;
+}
+.wrap .card .left .left__section .left__value {
+  font-size: 16px;
+  font-weight: 900;
+}
+.wrap .card .left .left__section:nth-child(2) {
+  padding: 25px;
+}
+.wrap .card .left .left__section:nth-child(2) .left__title {
+  margin-bottom: 15px;
+}
+.wrap .card .left .left__section input[type=range] {
+  -webkit-appearance: none;
+  width: calc(100% + 50px);
+  margin: 0;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  display: block;
+  position: relative;
+  top: 25px;
+  left: -25px;
+}
+.wrap .card .left .left__section input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #ff5e7c;
+  cursor: pointer;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background 0.3s ease-in-out;
+  outline: 4px solid #ffffff;
+  outline-offset: -12px;
+  position: relative;
+  top: -7px;
+}
+.wrap .card .left .left__section input[type=range]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: #ff5e7c;
+  border-radius: 5px;
+  width: 100%;
+  height: 4px;
+  position: relative;
+}
+.wrap .card .left .left__section .custom-select {
+  width: calc(100% + 50px);
+  position: relative;
+  left: -25px;
+  font-family: Montserrat, sans-serif;
+}
+.wrap .card .left .left__section .custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+.wrap .card .left .left__section .select-selected {
+  background-color: transparent;
+  color: #f9f9f9;
+}
+.wrap .card .left .left__section .select-items div, .wrap .card .left .left__section .select-selected {
+  color: #141414;
+  font-weight: 800;
+  cursor: pointer;
+  padding: 25px;
+}
+.wrap .card .left .left__section .select-items {
+  position: absolute;
+  background-color: #ffffff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+.wrap .card .left .left__section .select-hide {
+  display: none;
+}
+.wrap .card .left .left__section .select-items .same-as-selected {
+  color: #ffffff;
+}
+.wrap .card .left .left__section .select-items div {
+  font-weight: 500;
+}
+.wrap .card .left .left__section .select-items div:hover, .wrap .card .left .left__section .same-as-selected {
+  background-color: #ff5e7c;
+  color: #ffffff;
+}
+.wrap .card .right {
+  width: 50%;
+  padding: 50px;
+  background: #f0f0f0;
+  border-radius: 0 20px 20px 0;
+}
+.wrap .card .right .right__headline {
+  font-size: calc(15px + 1vw);
+  color: #151515;
+  margin-bottom: 20px;
+}
+.wrap .card .right .right__price {
+  font-size: calc(35px + 1vw);
+  font-weight: 900;
+  color: #151515;
+  margin-bottom: 25px;
+}
+.wrap .card .right .right__section {
+  margin-top: 25px;
+}
+.wrap .card .right .right__title {
+  color: #555555;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.wrap .card .right .right__value {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+    <!--    <input type="range" name="name" id="range" step="1" min="2" max="6">-->
+    <div class="card">
+        <div class="left">
+            <h1 class="left__headline">Розрахувати <br> щомісячний платіж? 🧐</h1>
+            <div class="left__section">
+                <p class="left__title">Вік дитини</p>
+                <div class="left__value">2</div>
+                <label for="ageInp"></label>
+                <input type="range" id="ageInp" class="left__range" step="1" min="2" max="6">
+            </div>
+            <div class="left__section">
+                <p class="left__title">Формат</p>
+                <label for="formatSelect"></label>
+                <div class="custom-select">
+                    <select id="formatSelect" class="left__select">
+                        <option value="full" class="left__option" selected>Повний день</option>
+                        <option value="full" class="left__option" selected>Повний день</option>
+                        <option value="notFull" class="left__option">Неповний день</option>
+                    </select>
+                </div>
+            </div>
+            <div class="left__section">
+                <p class="left__title">Харчування</p>
+                <label for="foodSelect"></label>
+                <div class="custom-select">
+                    <select id="foodSelect" class="left__select">
+                        <option value="2" class="left__option" selected>2-х разове (сніданок - обід)</option>
+                        <option value="2" class="left__option" selected>2-х разове (сніданок - обід)</option>
+                        <option value="4" class="left__option">4-х разове (сніданок, обід, перекус, вечеря)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="left__section">
+                <p class="left__title">Вид оплати</p>
+                <label for="paymentSelect"></label>
+                <div class="custom-select">
+                    <select id="paymentSelect" class="left__select">
+                        <option value="rekviz" class="left__option" selected>Оплата за реквізитами щомісяця</option>
+                        <option value="rekviz" class="left__option" selected>Оплата за реквізитами щомісяця</option>
+                        <option value="auto" class="left__option">Автоматичне списання з картки щомісяця</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <h2 class="right__headline">Загальні витрати 💸</h2>
+            <p class="right__price">3567₴</p>
+            <hr>
+            <div class="right__section">
+                <div class="right__title">Вартість абонимента</div>
+                <div class="right__value">24323₴</div>
+            </div>
+            <div class="right__section">
+                <div class="right__title">Записуєш в садок більше ніж одну дитину?</div>
+                <div class="right__value">10% знижки всі</div>
+            </div>
+            <div class="right__section">
+                <div class="right__title">Приведеш друга/подругу?</div>
+                <div class="right__value">20% знижки на 1 місяць для обох</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="select.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
